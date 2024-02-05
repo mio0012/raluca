@@ -1,0 +1,830 @@
+@import url(https://db.onlinewebfonts.com/c/6a1125d1f067e9d3977c713c0c44479a?family=FSP+DEMO+-+Imagist+Bold);
+@import url(https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap);
+
+@font-face {
+  font-family: myFont;
+  src:url(fonts/imagist.otf);
+}
+ 
+/* Nav button heartbeat animation */
+.heartbeat{-webkit-animation:heartbeat 4.5s ease-in-out infinite both;animation:heartbeat 4.5s ease-in-out infinite both}
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+
+/* NAV links hover animation */
+.hover-underline-animation {
+ 
+  position: relative;
+  color: var(--black);
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--empowered);
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Text animation */
+.text-focus-in{-webkit-animation:text-focus-in 1s ease-in-out forwards;animation:text-focus-in 1s ease-in-out forwards}
+
+ @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+/* TYPOGRAPHY */
+.tagline-small {
+  font-family: "LaoMN";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 150%;
+  font-style: normal;
+  color: var(--empowered);
+}
+
+.tagline-large {
+  font-family: "LaoMN";
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 150%;
+  font-style: normal;
+  color: var(--empowered);
+}
+
+h1 {
+  font-family: myFont;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 120%;
+  font-style: normal;
+}
+
+h2 {
+  font-family: myFont;
+  color: var(--black);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  font-style: normal;
+}
+
+h3 {
+  font-family: myFont;
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "LaoMN";
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 130%;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "LaoMN";
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 0%;
+  font-style: normal;
+}
+
+h6 {
+  font-family: "LaoMN";
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 140%;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Zen Maru Gothic';
+  color: var(--black);
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 150%;
+  font-style: normal;
+}
+
+body {
+  font-family: "Zen Maru Gothic"; 
+  display: block;
+  background-color: #FFFFFF;
+  align-items: center;
+}
+
+main  {
+  display: block;
+  align-self: center;
+  justify-content: center;
+}
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-between;
+  background-color: var(--light);
+  box-shadow: 2px 2px 4px var(--grey);
+  padding: 1rem;
+}
+
+/* Style the navigation bar container */
+.navbar {
+    overflow: hidden;
+}
+/*
+.overlay-mobile {
+  display: none;
+}
+*/
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar menu ("Menu"). Remove all padding and margin from the body. */
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar .icon {
+      float: right;
+      display: block;
+}
+
+
+
+.navbar {
+   
+    display: grid;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    align-items: center;
+    padding-left: 0%;
+
+}
+
+li a {
+        list-style: none;
+        font-family: "LaoMN";
+        text-decoration: none; 
+        display: block;
+        color: var(--black); 
+        text-align: center;
+        padding: 0.5rem ;
+}
+
+li#x-button {
+    float: right;
+    padding: 12px;
+}
+
+button#x-button.desktop-hide {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+
+img.logo{
+    display: none;
+}
+
+nav.primary-button {
+    align-items: stretch;
+}
+}
+
+
+ @media screen and (min-width: 601px) {
+
+.navbar a {
+     
+    display: inline-block;
+}
+
+ #logo-image {
+    display: none;
+}
+
+#x-button.desktop-hide {
+    display: none;
+}
+ 
+li {
+    list-style: none;
+    display: inline;
+}
+
+li a {
+    list-style: none;
+    font-family: "LaoMN";
+    text-decoration: none; 
+    display: block;
+    color: var(--black); 
+    text-align: center;
+    padding: 1rem 1rem;
+}
+}
+
+
+/* Navigation menu hover effect */
+/* Link Button */
+a.link-button {
+  font-family: "LaoMN";
+  text-decoration: none;  
+}
+
+:hover a.link-button {
+
+  display: inline-block;
+  position: relative;
+  color: #7138A5;
+}
+
+
+
+
+
+
+/* BUTTONS */
+.actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.primary-button {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  font-size: 24px;   
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;  
+  transition: background-color 0.3s, color 0.3s ease;
+  
+}
+
+
+.primary-button-text {
+  padding: 12px 24px;
+  position: relative;
+  width: fit-content;
+  font-weight: 700;
+  letter-spacing: 0;
+  all: unset;
+  border: 1px solid var(--empowered); 
+  border-radius: 30px 0px 30px 0px;
+  color: white;           
+  background-color: var(--empowered);   
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px  var(--grey);
+}
+
+.primary-button .primary-button-text {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-family: "Zen-Maru Gothic", sans-serif;
+  font-style: normal; 
+  line-height: 100%;
+  text-transform: uppercase;
+   
+}
+
+.secondary-button {
+  display: inline-flex;
+  padding: 12px 24px; 
+  font-size: 16px;  
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  all: unset;
+  border-radius: 30px 0px 30px 0px;
+  color: var(--black);            
+  background-color: var(--light);    
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px var(--grey);
+}
+
+.secondary-button-text {
+  padding: 12px 24px;
+  position: relative;
+  width: fit-content;
+  font-weight: 700;
+  letter-spacing: 0;
+  all: unset;
+  border: 1px solid var(--black); 
+  border-radius: 30px 0px 30px 0px;
+  color: var(--black);           
+  background-color: var(--light);   
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+}
+
+.secondary-button .secondary-button-text {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-family: "Zen-Maru Gothic", sans-serif;
+  font-style: normal;    
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+/* Hover effect */
+.primary-button :hover {
+  background-color:var(--black);   
+  padding: 12px 24px;
+  border-radius: 30px 0px 30px 0px;  
+  box-shadow: 6px 8px 8px 0px #B9B9B9;
+}
+
+.secondary-button :hover {
+  background-color: var(--natural);   
+  padding: 12px 24px;
+  border-radius: 30px 0px 30px 0px;  
+  box-shadow: 6px 8px 8px 0px #B9B9B9;
+}
+
+
+
+
+/* Links hover effect */
+
+:hover a.link-button {
+ 
+  display: inline-block;
+  color: var(--empowered);
+}
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    padding: 80px 32px;
+    position: relative;
+    background-image: url(gradients/gradient-green.jpeg);
+    background-size: cover;
+    background-position: 20% 30%;
+}
+
+footer .content {
+    gap: 319px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+footer .column {
+    display: flex;
+    flex-direction: column;
+    width: 1216px;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+}
+
+footer .logo {
+    position: relative;
+    width: 416px;
+    height: 57px;
+}
+
+footer .image {
+    position: absolute;
+    width: 333px;
+    height: 76px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+footer .div {
+    flex-direction: column;
+    gap: 24px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+footer .content-2 {
+    flex-direction: column;
+    gap: 4px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+footer .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: 16px;
+    font-family: "LaoMN";
+    font-weight: 600;
+    color: var(--black);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+footer .text-wrapper-2 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Zen Maru Gothic";
+    font-weight: var(--text-regular-link-font-weight);
+    color: var(--black);
+    font-size: var(--text-regular-link-font-size);
+    letter-spacing: var(--text-regular-link-letter-spacing);
+    line-height: var(--text-regular-link-line-height);
+    text-decoration: underline;
+    font-style: var(--text-regular-link-font-style);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+footer .text-wrapper-3 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Zen Maru Gothic";
+    font-weight: var(--text-regular-link-font-weight);
+    color: var(--black);
+    font-size: var(--text-regular-link-font-size);
+    letter-spacing: var(--text-regular-link-letter-spacing);
+    line-height: var(--text-regular-link-line-height);
+    text-decoration: underline;
+    font-style: var(--text-regular-link-font-style);
+}
+
+footer .divider {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+}
+
+footer .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 0px 0px 16px;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+footer .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: 0px;
+    font-family: "LaoMN";
+    font-weight: var(--tagline-large-font-weight);
+    color: var(--black);
+    font-size: var(--tagline-large-font-size);
+    letter-spacing: var(--tagline-large-letter-spacing);
+    line-height: var(--tagline-large-line-height);
+    white-space: nowrap;
+    font-style: var(--tagline-large-font-style);
+}
+
+footer .footer-links {
+    width: 388px;
+    justify-content: center;
+    gap: 16px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+footer .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    background-color: var(--empowered);
+    border-radius: 30px;
+    border: 1px solid;
+    box-shadow: var(--small);
+    border-color: var(--empowered);
+}
+
+footer .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    
+}
+
+footer .credits {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+footer .row-2 {
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+footer .copyright-text {
+    position: relative;
+    width: 341px;
+    height: 21px;
+}
+
+footer .text-wrapper-5 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Zen Maru Gothic";
+    font-weight: var(--text-small-regular-font-weight);
+    color: var(--black);
+    font-size: var(--text-small-regular-font-size);
+    letter-spacing: var(--text-small-regular-letter-spacing);
+    line-height: var(--text-small-regular-line-height);
+    white-space: nowrap;
+    font-style: var(--text-small-regular-font-style);
+}
+
+footer .footer-links-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+footer .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Zen Maru Gothic";
+    font-weight: var(--text-small-link-font-weight);
+    color: var(--black);
+    font-size: var(--text-small-link-font-size);
+    letter-spacing: var(--text-small-link-letter-spacing);
+    line-height: var(--text-small-link-line-height);
+    text-decoration: underline;
+    white-space: nowrap;
+    font-style: var(--text-small-link-font-style);
+}
+
+@media only screen and (max-width: 600px) {
+.text-wrapper-6 {
+      display: none;
+  }
+  }
+  
+  
+
+
+/* LAYOUT */
+
+/* Newsletter CTA Section*/ 
+.CTA-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.CTA-newsletter .card {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+  
+.CTA-newsletter .column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 0px 11px;
+  position: relative;
+}
+
+.CTA-newsletter .content {
+  flex-direction: column;
+ 
+  align-items: flex-start;
+  gap: 24px;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+  
+
+
+
+.CTA-newsletter .actions {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 158px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0px 0px;
+  position: relative;
+}
+  
+.CTA-newsletter .form {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 93%;
+  flex: 0 0 auto;
+}
+
+.CTA-newsletter .input-field {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+.CTA-newsletter .div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+  
+.CTA-newsletter .input {
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--black);
+  box-shadow: var(--shadow-small);
+  display: flex;
+  position: relative;
+}
+
+.CTA-newsletter .text-wrapper {
+  flex-grow: 1;
+  position: relative;
+  border: none;
+  background: none;
+  flex: 1;
+  margin-top: -1px;
+  color: var(--collection-1-grey);
+  font-size: var(--text-regular-regular-font-size);
+  line-height: var(--text-regular-regular-line-height);
+  font-family: var(--text-regular-regular-font-family);
+  font-weight: var(--text-regular-regular-font-weight);
+  letter-spacing: var(--text-regular-regular-letter-spacing);
+  font-style: var(--text-regular-regular-font-style);
+  padding: 0;
+}
+
+.CTA-newsletter .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--empowered);
+  border-radius: 30px 0px 30px 0px;
+  border: 1px solid;
+  box-shadow: var(--small);
+  border-color: var(--empowered);
+  font-family: "Zen Maru Gothic", Helvetica;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+  align-self: stretch;
+  width: 100%;
+}
+  
+.CTA-newsletter .by-clicking-sign-up {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--text-tiny-regular-font-family);
+  font-weight: var(--text-tiny-regular-font-weight);
+  color: var(--black);
+  font-size: var(--text-tiny-regular-font-size);
+  letter-spacing: var(--text-tiny-regular-letter-spacing);
+  line-height: var(--text-tiny-regular-line-height);
+  font-style: var(--text-tiny-regular-font-style);
+}
+
+.CTA-newsletter .placeholder-image {
+  position: relative;
+  width: 474px;
+  height: 425px;
+}
+  
+  
+
+
+
+
+

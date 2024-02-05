@@ -1,0 +1,649 @@
+/* Hero section */
+.header-image-CTA {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 112px 64px;
+  position: relative;
+  background-color: #00000033;
+  background-image: url(images/reach.jpeg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 1rem;
+}
+
+.header-image-CTA .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.header-image-CTA .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.tagline-large {
+  position: relative;
+  width: fit-content;
+  
+}
+
+.header-image-CTA .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+
+.header-image-CTA .lorem-ipsum-dolor {
+  position: relative;
+  align-self: stretch;
+  font-family: "Zen Maru Gothic";
+  font-size: large;
+  color: var(--white);
+}
+
+
+.header-image-CTA .text-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  font-family: "Zen Maru Gothic";
+  font-weight: 700;
+  color: var(--white);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+
+.header-image-CTA .div {
+ 
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  font-family: "Zen Maru Gothic-Bold";
+  font-weight: 700;
+  color: var(--black);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+/* Hover effect */
+.primary-button :hover {
+  background-color:var(--black);   
+  
+}
+
+.secondary-button :hover {
+  background-color: var(--natural);   
+  color: var(--black); 
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 64px 60px;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 1rem;
+  background-image: url(gradients/grrradipurple.png);
+  background-position: 120% -20%;
+}
+
+.contact-form .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+
+
+.contact-form .content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+h2.heading {
+  text-align: center;
+}
+
+
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contact-form .input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contact-form .input-field {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.contact-form .div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.contact-form .label {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Zen Maru Gothic";
+  font-weight: 600;
+  color: var(--black);
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.contact-form .content-wrapper {
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #13110f;
+  box-shadow: var(--shadow-small);
+  display: flex;
+  position: relative;
+  align-self: stretch;
+}
+
+.contact-form .text-wrapper {
+  position: relative;
+  flex-grow: 1;
+  border: none;
+  background: none;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Zen Maru Gothic";
+  color: var(--black);
+  font-size: 16px;
+  padding: 0;
+}
+
+.contact-form .textarea-input-field {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  box-shadow: var(--shadow-small);
+}
+
+.contact-form .input-with-label-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 154px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.contact-form .input-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-bottom: -19px;
+}
+
+.contact-form .label-2 {
+  width: 370px;
+  margin-top: -1px;
+  font-family: "Zen Maru Gothic";
+  font-weight: 600;
+  color: var(--black);
+  position: relative;
+}
+
+.contact-form .div-wrapper {
+  height: 140px;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--black);
+  box-shadow: var(--shadow-small);
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  
+}
+
+.contact-form .text-2 {
+  flex: 1;
+  margin-top: -1px;
+  position: relative;
+  align-self: stretch;
+  font-family: "Zen Maru Gothic";
+  color: var(--black);
+}
+
+.contact-form .checkbox {
+  display: flex;
+  width: 142px;
+  height: 37px;
+  align-items: center;
+  gap: 12px;
+  padding: 0px 0px 16px;
+  position: relative;
+}
+
+.contact-form .checkbox-2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: -1px;
+  background-color: var(--white);
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: var(--black);
+}
+
+.contact-form .label-3 {
+  width: fit-content;
+  margin-top: -2.5px;
+  margin-bottom: -0.5px;
+  font-family:"Zen Maru Gothic";
+  color: var(--black);
+  white-space: nowrap;
+  position: relative;
+}
+
+.contact-form .button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+  margin-bottom: -2px;
+  margin-left: -2px;
+  margin-right: -2px;
+  background-color: var(--empowered);
+  border-radius: 30px 0px 30px 0px;
+  border: 1px solid;
+  box-shadow: var(--small);
+  border-color: var(--empowered);
+}
+
+.contact-form .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Zen Maru Gothic";
+  font-weight: 700;
+  color: var(--white);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+/* CONTACT ME SECTION */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 112px 32px;
+  position: relative;
+}
+
+.contact .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contact .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+
+
+.contact .text {
+  font-size: 20px;
+  position: relative;
+  align-self: stretch;
+  font-family: "Zen Maru Gothic";
+  color: var(--black);
+  text-align: center;
+}
+
+.contact .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  gap: 48px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 600px) {
+  .contact .row {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact .content {
+  gap: 16px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.contact .img {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+
+.contact .text-wrapper {
+  font-family: "LaoMN";
+  font-size: var(--heading-h4-font-size);
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  color: var(--black);
+  text-align: center;
+}
+
+.contact .p {
+  font-size: 16px;
+  position: relative;
+  align-self: stretch;
+  font-family: "Zen Maru Gothic";
+  color: var(--black);
+  text-align: center;
+ 
+}
+
+.contact .link {
+  position: relative;
+  align-self: stretch;
+  font-family: "Zen Maru Gothic";
+  font-weight: var(--text-regular-link-font-weight);
+  color: var(--empowered);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+/* Newsletter CTA Section*/ 
+.CTA-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.CTA-newsletter .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  padding: 2rem;;
+  align-items: center;
+  position: relative;
+ 
+}
+
+@media (max-width: 600px) {
+  .CTA-newsletter .card  {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+}
+  
+.CTA-newsletter .column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  
+  position: relative;
+}
+
+.CTA-newsletter .content {
+  flex-direction: column;
+  width: 90%;
+  align-items: flex-start;
+  
+  
+  display: flex;
+  position: relative;
+}
+
+.CTA-newsletter .actions {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 158px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0px 0px;
+  position: relative;
+}
+  
+.CTA-newsletter .form {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 93%;
+  flex: 0 0 auto;
+}
+
+.CTA-newsletter .input-field {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+.CTA-newsletter .div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+  
+.CTA-newsletter .input {
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--black);
+  box-shadow: var(--shadow-small);
+  display: flex;
+  position: relative;
+}
+
+.CTA-newsletter .text-wrapper {
+  flex-grow: 1;
+  position: relative;
+  border: none;
+  background: none;
+  flex: 1;
+  margin-top: -1px;
+  color: var(--collection-1-grey);
+  font-size: var(--text-regular-regular-font-size);
+  line-height: var(--text-regular-regular-line-height);
+  font-family: var(--text-regular-regular-font-family);
+  font-weight: var(--text-regular-regular-font-weight);
+  letter-spacing: var(--text-regular-regular-letter-spacing);
+  font-style: var(--text-regular-regular-font-style);
+  padding: 0;
+}
+
+.CTA-newsletter .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--empowered);
+  border-radius: 30px 0px 30px 0px;
+  border: 1px solid;
+  box-shadow: var(--small);
+  border-color: var(--empowered);
+  font-family: "Zen Maru Gothic", Helvetica;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+  align-self: stretch;
+  width: 100%;
+}
+  
+.CTA-newsletter .by-clicking-sign-up {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--text-tiny-regular-font-family);
+  font-weight: var(--text-tiny-regular-font-weight);
+  color: var(--black);
+  font-size: var(--text-tiny-regular-font-size);
+  letter-spacing: var(--text-tiny-regular-letter-spacing);
+  line-height: var(--text-tiny-regular-line-height);
+  font-style: var(--text-tiny-regular-font-style);
+}
+
+.CTA-newsletter .placeholder-image {
+  position: relative;
+  width: 474px;
+  height: 425px;
+  justify-self: center;
+  border-radius: 4px;
+}
+  
+  
+
+
+
+
+
+
+
+

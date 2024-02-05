@@ -1,0 +1,205 @@
+body {
+  margin: 0px;
+ 
+}
+
+main {
+  margin: 0rem;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  margin-bottom: 7rem;
+  margin-left: 3rem;
+}
+
+.hero .content {
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 80px;
+  position: relative;
+}
+
+.container.tagline{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hero .tagline-lg {
+  position: relative;
+  width: fit-content;
+  font-family: "LaoMn", sans-serif;
+  font-weight: 400;
+  color: #6650CD;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: normal;
+  line-height: 120%;
+  white-space: nowrap;
+  font-style: normal;
+}
+
+.hero .heading {
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hero .h1-desktop {
+  position: relative;
+  align-self: stretch;
+  font-family: "FSP DEMO - Imagist";
+  font-weight: 700;
+  color: #13110f;
+  letter-spacing: 0px;
+  line-height: 140%;
+  font-style: normal;
+}
+
+.hero .text {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 150%;
+  font-style: normal;
+  position: relative;
+  align-self: stretch;
+  color: #13110f;
+  line-height: 140%;
+  font-style: normal;
+}
+
+.hero .actions {
+  display: inline-flex;
+  align-items: start;
+  gap: 24px;
+  padding: 16px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hero .image {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  width: 400px;
+  object-fit: cover;
+  align-self: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/*ABOUT SECTION*/
+.section-title {
+  font-family: "LaoMN";
+  font-weight: 100;
+  margin-left: 3.25rem;
+}
+
+.about-section {
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 7rem;
+  margin-left: 2rem;
+}
+  
+.about-section .photo {
+  position: relative;
+  border-radius: 4px;
+  width: 500px;
+  box-shadow: 2px 2px 4px #b0b0b0;
+}
+
+.about-section .content {
+  gap: 32px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.about-section .text {
+  gap: 12px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about-section .heading {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "LaoMN";
+  font-weight: 100;
+  color: #13110f;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 57.4px; 
+}
+
+.about-section .text-wrapper1 {
+  font-weight: 700;
+}
+
+.about-section .text-wrapper2 {
+  font-family: "Brice-Bold", Helvetica;
+  font-weight: 700;
+}
+
+.about-section .text-wrapper3 {
+  font-family: "Forum-Regular", Helvetica;
+  font-size: 38px;
+  line-height: 60.3px;
+}
+
+.about-section .text-wrapper4 {
+  font-family: "Futura-MediumItalic", Helvetica;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40.3px;
+}
+
+.about-section .text-wrapper5 {
+  font-family: "Forum-Regular", Helvetica;
+  font-size: 36px;
+  line-height: 40.3px;
+}
+
+.about-section .text {
+  position: relative;
+  align-self: stretch;
+  font-family: "Zen Maru Gothic-Regular", Helvetica;
+  font-weight: 300;
+  color: #13110f;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+}

@@ -1,0 +1,469 @@
+/* EDUCATION Section */ 
+.about { 
+   padding: 1rem; 
+    
+}
+
+.education-section .content { 
+    margin-top: 3rem;
+}
+
+.education-section {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    padding: 3rem;
+    gap: 3rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "list photo"
+}
+  
+
+  
+img.photo { 
+    grid-area: photo; 
+    width: 100%;
+    align-self: center;
+    border-radius: 4px;
+}
+  
+.content { grid-area: list; }
+  
+h1.heading {
+    padding: 1rem;
+    position: relative;
+    align-self: stretch;
+    
+}
+
+.education-section .list {
+    gap: 24px;
+    padding: 8px 0px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.education-section .list-item {
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.education-section .circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.education-section .ellipse {
+    width: 95px;
+    height: 95px;
+    border-radius: 47.5px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(151, 71, 255, 0.3) 42.05%, rgba(17.27, 12.22, 40.9, 0) 100%);
+}
+
+.education-section .ellipse1 {
+    width: 95px;
+    height: 95px;
+    border-radius: 47.5px;
+    background: radial-gradient(50% 50% at 50% 50%, rgb(187, 213, 97) 42.05%, rgba(17.27, 12.22, 40.9, 0) 100%);
+}
+ 
+.education-section .ellipse2 {
+    width: 95px;
+    height: 95px;
+    border-radius: 47.5px;
+    background: radial-gradient(50% 50% at 50% 50%, rgb(255, 191, 0) 42.05%, rgba(17.27, 12.22, 40.9, 0) 100%);
+}
+
+.education-section .ellipse3 {
+    width: 95px;
+    height: 95px;
+    border-radius: 47.5px;
+    background: radial-gradient(50% 50% at 50% 50%, rgb(113, 56, 165) 32.05%, rgba(17.27, 12.22, 40.9, 0) 100%);
+}
+.education-section .text-wrapper {
+    align-self: stretch;
+    color: #13110f;
+    font-size: 20px;
+    line-height: 120%;
+    position: relative;
+    font-family: "LaoMN", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-style: normal;
+}
+
+p.about {
+    font-size: 18px;
+    position: relative;
+    align-self: stretch;
+    font-family: "Zen Maru Gothic";
+    color: #13110f;
+    width: 90%;
+}
+
+  
+  /* Responsive styles for screens smaller than 600px */
+  @media (max-width: 600px) {
+    .education-section {
+      display: block;
+      grid-template-columns: 1fr; /* Single column layout for smaller screens */
+      padding: 1rem;
+    }
+  
+    .list-item {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .education-section .text-wrapper,
+    p.about {
+      font-size: 16px;
+      width: 90%; /* Full width for smaller screens */
+    }
+
+    .education-section .list {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+  }
+  
+    
+
+/* Experience Section */
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem;
+    position: relative;
+    background-color: #ffffff;
+    margin-bottom: 3rem;
+}
+
+
+.experience-section .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .experience-section .content {
+      display: block;
+      grid-template-columns: 1fr;
+      
+    }
+  }
+
+
+.experience-section .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.experience-section .div {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+.tagline-large {
+    position: relative;
+    color: #6650CD;
+}
+
+h3.heading {
+    position: relative;
+    align-self: stretch;
+}
+
+.experience-section p.text-suspendisse {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Zen Maru Gothic";
+    color: #13110f;
+    width: 90%;
+}
+
+.experience-section .actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0px 0px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+
+.experience-section .placeholder-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+        
+/* Personalised section */
+.personalised-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem;
+    width: 90%;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.personalised-section .container {
+    display: flex;
+    flex-direction: column; /* Change to column for smaller screens */
+    align-items: stretch;
+    gap: 3rem;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media (min-width: 600px) {
+  .personalised-section .container {
+    flex-direction: row; /* Change back to row for larger screens */
+  }
+
+  .personalised-section .placeholder-image {
+    width: 70%;
+    object-fit: cover;
+    
+  }
+}
+
+
+
+.personalised-section .container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.personalised-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.personalised-section .div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.personalised-section .circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.personalised-section .ellipse {
+    width: 95px;
+    height: 95px;
+    border-radius: 47.5px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(151, 71, 255, 0.3) 42.05%, rgba(17.27, 12.22, 40.9, 0) 100%);
+}
+
+h4.heading {
+    font-family: myFont;
+}
+
+p.text {
+    position: relative;
+    align-self: stretch;
+    font-family: "Zen Maru Gothic";
+    color: #13110f;
+    font-size: 16px;
+}
+
+
+.personalised-section .placeholder-image {
+    position: relative;
+    align-self: center;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}   
+
+    
+/* CONTACT SECTION */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.contact .section-title {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.contact .subheading {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    
+}
+
+.contact .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+h2 .heading {
+    font-family: var(--heading-h2-font-family);
+    font-weight: var(--heading-h2-font-weight);
+    font-size: var(--heading-h2-font-size);
+    line-height: var(--heading-h2-line-height);
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    color: var(--black);
+    text-align: center;
+    
+}
+
+.contact .text {
+    font-size: 20px;
+    position: relative;
+    align-self: stretch;
+    font-family: "Zen Maru Gothic";
+    text-align: center;
+   
+}
+
+
+.contact .div.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    align-self: center;
+    width: 90%;
+   
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    .contact.div.row {
+      display: block;
+      flex-direction: column; /* Change back to row for larger screens */
+    }
+  }
+
+.contact .content {
+    padding: 1rem;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact .img {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.contact .content-2 {
+    gap: 16px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact .text-wrapper {
+    font-family: "LaoMN";
+    font-weight: var(--heading-h4-font-weight);
+    font-size: var(--heading-h4-font-size);
+    line-height: var(--heading-h4-line-height);
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: var(--heading-h4-letter-spacing);
+    font-style: var(--heading-h4-font-style);
+}
+
+.contact .p {
+    font-size: 18px;
+    line-height: var(--text-regular-regular-line-height);
+    position: relative;
+    align-self: stretch;
+    text-align: center;  
+}
+
+.contact .link {
+    position: relative;
+    align-self: stretch;
+    font-family: "Zen Maru Gothic";
+    color: var(--empowered);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+    
+}

@@ -1,0 +1,405 @@
+/* Include your other CSS styles here */
+@import url(https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap);
+
+
+
+/* Blog section */
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem;
+    position: relative;
+}
+
+
+.blog-grid .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+    
+.blog-grid .section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+}
+    
+.blog-grid .subheading {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "LaoMN";
+    font-weight: var(--tagline-large-font-weight);
+    color: var(--empowered);
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: var(--tagline-large-line-height);
+    white-space: nowrap;
+    font-style: normal;
+}
+    
+.blog-grid .content {
+    
+    align-items: left;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+    
+.blog-grid .heading {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--heading-h1-font-family);
+    font-weight: var(--heading-h1-font-weight);
+    color: #13110f;
+    font-size: var(--heading-h1-font-size);
+    letter-spacing: var(--heading-h1-letter-spacing);
+    line-height: var(--heading-h1-line-height);
+    font-style: var(--heading-h1-font-style);
+}
+
+.blog-grid .text {
+    align-self: stretch;
+    font-family: "Zen Maru Gothic";
+    font-weight: var(--text-medium-regular-font-weight);
+    font-size: var(--text-medium-regular-font-size);
+    line-height: var(--text-medium-regular-line-height);
+    position: relative;
+    color: #13110f;
+    letter-spacing: var(--text-medium-regular-letter-spacing);
+    font-style: var(--text-medium-regular-font-style);
+}
+
+.blog-grid .button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 30px;
+}
+
+.blog-grid .text-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    position: relative;
+    width: fit-content;
+    font-family: var(--text-regular-link-font-family);
+    font-weight: var(--text-regular-link-font-weight);
+    color: var(--black);
+    font-size: var(--text-regular-link-font-size);
+    letter-spacing: var(--text-regular-link-letter-spacing);
+    line-height: var(--text-regular-link-line-height);
+    text-decoration: underline;
+    white-space: nowrap;
+    font-style: var(--text-regular-link-font-style);
+}
+
+.blog-grid .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.blog-grid .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 600px) {
+  .blog-grid .row {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+}
+    
+.blog-grid div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+    
+}
+    
+.blog-grid .placeholder-image {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.blog-grid .div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.blog-grid .info {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.blog-grid .container {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 4px 8px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--light);
+}
+
+.blog-grid .content-2 {
+    width: 363px;
+    align-items: flex-start;
+    gap: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.blog-grid .content-3 {
+  width: 362px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.blog-grid p.text {
+    align-self: stretch;
+    font-size: 20px;
+    font-family: "Zen Maru Gothic";
+    position: relative;
+    color: #13110f;
+}
+
+.blog-grid .icon-right {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+
+}
+
+/* Newsletter CTA Section*/ 
+.CTA-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .CTA-newsletter .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .CTA-newsletter .card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1.desktop {
+      font-size: 32px;
+    }
+
+    .blog-grid p.text  {
+      font-size: 16px;
+    }
+
+    .view-all {
+      display: none;
+    }
+
+    .blog-grid .row {
+      gap: 3rem;
+    }
+  }
+    
+  .CTA-newsletter .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 48px 0px 11px;
+    position: relative;
+  }
+  
+  .CTA-newsletter .content {
+    flex-direction: column;
+   
+    align-items: flex-start;
+    gap: 24px;
+    flex: 0 0 auto;
+    display: flex;
+    position: relative;
+  }
+  
+  .CTA-newsletter .actions {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 158px;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0px 0px;
+    position: relative;
+  }
+    
+  .CTA-newsletter .form {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 93%;
+    flex: 0 0 auto;
+  }
+  
+  .CTA-newsletter .input-field {
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+  }
+  
+  .CTA-newsletter .div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    position: relative;
+  }
+    
+  .CTA-newsletter .input {
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--black);
+    box-shadow: var(--shadow-small);
+    display: flex;
+    position: relative;
+  }
+  
+  .CTA-newsletter .text-wrapper {
+    flex-grow: 1;
+    position: relative;
+    border: none;
+    background: none;
+    flex: 1;
+    margin-top: -1px;
+    color: var(--collection-1-grey);
+    font-size: var(--text-regular-regular-font-size);
+    line-height: var(--text-regular-regular-line-height);
+    font-family: var(--text-regular-regular-font-family);
+    font-weight: var(--text-regular-regular-font-weight);
+    letter-spacing: var(--text-regular-regular-letter-spacing);
+    font-style: var(--text-regular-regular-font-style);
+    padding: 0;
+  }
+  
+  .CTA-newsletter .button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--empowered);
+    border-radius: 30px 0px 30px 0px;
+    border: 1px solid;
+    box-shadow: var(--small);
+    border-color: var(--empowered);
+    font-family: "Zen Maru Gothic", Helvetica;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+    align-self: stretch;
+    width: 100%;
+  }
+    
+  .CTA-newsletter .by-clicking-sign-up {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--text-tiny-regular-font-family);
+    font-weight: var(--text-tiny-regular-font-weight);
+    color: var(--black);
+    font-size: var(--text-tiny-regular-font-size);
+    letter-spacing: var(--text-tiny-regular-letter-spacing);
+    line-height: var(--text-tiny-regular-line-height);
+    font-style: var(--text-tiny-regular-font-style);
+  }
+  
+  .CTA-newsletter .placeholder-image {
+    position: relative;
+    width: 474px;
+    height: 425px;
+  }
+    
+    
+  
+  
